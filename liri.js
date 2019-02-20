@@ -17,7 +17,6 @@ inquirer.prompt([
         name: "name",
         message: "What your name???"
     },
-
     {
         type: "list",
         name: "choice",
@@ -32,18 +31,18 @@ inquirer.prompt([
         case "spotify":
             //SPotify method
             spotify.getSong();
-            break
+            break;
         case "omdb":
             // OMDB method
             movie.getMovie();
-            break
+            break;
         case "bandsintown":
             // bands method
             band.getBand();
-            break
+            break;
         default:
             console.log("Try again")
-            break
+            break;
     }
 
 })

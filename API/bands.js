@@ -24,8 +24,9 @@ function getBand() {
                         console.log("|______________________________________|");
                         console.log("");
                     }
-                } else {
-                    console.log("No results found for the search : ( ")
+                }
+                else {
+                    console.log("No results found for the search :( ");
                 }
 
 

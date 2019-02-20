@@ -1,8 +1,9 @@
-var Spotify = require("node-spotify-api")
+require('dotenv').config();
+const Spotify = require("node-spotify-api");
+const keys = { id: process.env.SPOTIFY_API_ID, secret: process.env.SPOTIFY_SEC_ID }
+const inquirer = require("inquirer");
+const spotify = new Spotify(keys);
 
-const keys = require("../keys");
-const inquirer = require("inquirer")
-const spotify = new Spotify(keys.spotify)
 
 function getSong() {
 
@@ -48,7 +49,7 @@ function getSong() {
                                 console.log("|______________________________________|")
                             })
                     else if (user.rand == "no" || user.rand == "n") {
-                        console.log("\nOk, see you later :)\n")
+                        console.log("\nOk, see you later :)\n");
                     }
                 })
             })
@@ -60,7 +61,4 @@ function getSong() {
 }
 module.exports = {
     getSong: getSong,
-    saySong: function () {
-        console.log("Hello from the spotify object")
-    }
 }
