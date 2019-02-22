@@ -5,7 +5,7 @@
 // install npm i inquirer
 // install npm i axios
 // install npm i moment
-
+// Initialize Firebase
 const inquirer = require('inquirer');
 const spotify = require("./API/spotify");
 const movie = require("./API/omdb");

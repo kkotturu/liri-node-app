@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const axios = require("axios");
-function getMovie() {
 
+function getMovie() {
     inquirer.prompt([
         {
             type: "input",
